@@ -1,0 +1,190 @@
+[
+  {
+    "game_event": "bomb_defused",
+    "player_conversions": [
+      {
+        "userid": "userid",
+        "player": "player"
+      }
+    ],
+    "event_fires": [
+      {
+        "event": "bomb_defused",
+        "player": "player"
+      }
+    ]
+  },
+  {
+    "game_event": "bomb_exploded",
+    "player_conversions": [
+      {
+        "userid": "userid",
+        "player": "player"
+      }
+    ],
+    "event_fires": [
+      {
+        "event": "bomb_exploded",
+        "player": "player"
+      }
+    ]
+  },
+  {
+    "game_event": "bomb_planted",
+    "player_conversions": [
+      {
+        "userid": "userid",
+        "player": "player"
+      }
+    ],
+    "event_fires": [
+      {
+        "event": "bomb_planted",
+        "player": "player"
+      }
+    ]
+  },
+  {
+    "game_event": "player_blind",
+    "player_conversions": [
+      {
+        "userid": "attacker",
+        "player": "attacker"
+      },
+      {
+        "userid": "userid",
+        "player": "victim"
+      }
+    ],
+    "event_fires": [
+      {
+        "event": "player_blind",
+        "player": "attacker",
+        "condition": "not_self_inflicted"
+      },
+      {
+        "event": "player_go_blind",
+        "player": "victim",
+        "condition": "not_self_inflicted"
+      },
+      {
+        "event": "player_self_blind",
+        "player": "victim",
+        "condition": "self_inflicted"
+      }
+    ]
+  },
+  {
+    "game_event": "player_death",
+    "player_conversions": [
+      {
+        "userid": "assister",
+        "player": "assister"
+      },
+      {
+        "userid": "attacker",
+        "player": "attacker"
+      },
+      {
+        "userid": "userid",
+        "player": "victim"
+      }
+    ],
+    "event_fires": [
+      {
+        "event": "player_assist",
+        "player": "assister"
+      },
+      {
+        "event": "player_kill",
+        "player": "attacker",
+        "condition": "not_self_inflicted"
+      },
+      {
+        "event": "player_death",
+        "player": "victim",
+        "condition": "not_self_inflicted"
+      },
+      {
+        "event": "player_suicide",
+        "player": "victim",
+        "condition": "self_inflicted"
+      }
+    ]
+  },
+  {
+    "game_event": "player_hurt",
+    "player_conversions": [
+      {
+        "userid": "attacker",
+        "player": "attacker"
+      },
+      {
+        "userid": "userid",
+        "player": "victim"
+      }
+    ],
+    "event_fires": [
+      {
+        "event": "player_attack",
+        "player": "attacker",
+        "condition": "not_self_inflicted"
+      },
+      {
+        "event": "player_victim",
+        "player": "victim",
+        "condition": "not_self_inflicted"
+      },
+      {
+        "event": "player_self_injury",
+        "player": "victim",
+        "condition": "self_inflicted"
+      }
+    ]
+  },
+  {
+    "game_event": "player_disconnect",
+    "player_conversions": [
+      {
+        "userid": "userid",
+        "player": "player"
+      }
+    ],
+    "event_fires": [
+      {
+        "event": "player_disconnect",
+        "player": "player"
+      }
+    ]
+  },
+  {
+    "game_event": "player_jump",
+    "player_conversions": [
+      {
+        "userid": "userid",
+        "player": "player"
+      }
+    ],
+    "event_fires": [
+      {
+        "event": "player_jump",
+        "player": "player"
+      }
+    ]
+  },
+  {
+    "game_event": "player_spawn",
+    "player_conversions": [
+      {
+        "userid": "userid",
+        "player": "player"
+      }
+    ],
+    "event_fires": [
+      {
+        "event": "player_spawn",
+        "player": "player"
+      }
+    ]
+  }
+]
